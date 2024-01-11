@@ -1,0 +1,112 @@
+/* Common styles */
+.scroll-top-button {
+  text-decoration: none;
+  border: none;
+  display: none;
+  position: fixed;
+  z-index: 2147483647;
+}
+.scroll-top-button:hover,
+.scroll-top-button:focus,
+.scroll-top-button:active {
+  text-decoration: none;
+  border: none;
+}
+
+/* Tab style */
+#scrollTopButton-tab {
+  bottom: 0;
+  right: 30px;
+  width: 70px;
+  height: 70px;
+  margin-bottom: -10px;
+  padding: 10px 5px;
+  font: 14px/20px sans-serif;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: 0 1px 0 #fff;
+  color: #828282;
+  -webkit-box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+  background-color: #e6e6e6;
+  background-image: -moz-linear-gradient(top, #ebebeb, #dedede);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ebebeb), to(#dedede));
+  background-image: -webkit-linear-gradient(top, #ebebeb, #dedede);
+  background-image: -o-linear-gradient(top, #ebebeb, #dedede);
+  background-image: linear-gradient(to bottom, #ebebeb, #dedede);
+  background-repeat: repeat-x;
+  -webkit-transition: margin-bottom 150ms linear;
+  -moz-transition: margin-bottom 150ms linear;
+  -o-transition: margin-bottom 150ms linear;
+  transition: margin-bottom 150ms linear;
+}
+
+#scrollTopButton-tab:hover {
+  margin-bottom: 0;
+}
+
+/* Pill style */
+#scrollTopButton-pill {
+  bottom: 20px;
+  right: 20px;
+  background-color: #555;
+  color: #fff;
+  font-size: 12px;
+  font-family: sans-serif;
+  text-decoration: none;
+  opacity: .9;
+  padding: 10px 20px;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  border-radius: 16px;
+  -webkit-transition: background 200ms linear;
+  -moz-transition: background 200ms linear;
+  -o-transition: background 200ms linear;
+  transition: background 200ms linear;
+  -webkit-backface-visibility: hidden;
+}
+
+#scrollTopButton-pill:hover {
+  background-color: #000;
+}
+
+/* Image style */
+#scrollTopButton-image {
+  background-image: url("../images/top.png");
+  bottom: 20px;
+  right: 20px;
+  width: 38px;    /* Width of image */
+  height: 38px;   /* Height of image */
+}
+
+/* Pill style */
+#scrollTopButton-pill {
+  bottom: 20px;
+  right: 20px;
+  background-color: #555;
+  color: #fff;
+  font-size: 12px;
+  font-family: sans-serif;
+  text-decoration: none;
+  opacity: .9;
+  padding: 10px 20px;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  border-radius: 16px;
+  -webkit-transition: background 200ms linear;
+  -moz-transition: background 200ms linear;
+  -o-transition: background 200ms linear;
+  transition: background 200ms linear;
+  -webkit-backface-visibility: hidden;
+}
+
+#scrollTopButton-pill:hover {
+  background-color: #000;
+}
+
+/* Text link style */
+#scrollTopButton-link {
+  bottom: 20px;
+  right: 20px;
+}

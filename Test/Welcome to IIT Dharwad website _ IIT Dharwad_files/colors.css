@@ -1,0 +1,104 @@
+:root{
+	--primary-color: #89288f;
+	--secondary-color: #faa519;
+	--tertiary-color: #f2f2f2;
+	--fourth-color: #dee2e6;
+		
+	--dark-color: #666;
+	--darker-color: #111;
+	--light-color: #888;
+	--lighter-color: #ccc;
+	
+	--text-color: #333;
+	--heading-color: #000;	
+	
+}
+
+/*Background Color*/
+.footer-region-wrapper{
+	background-color: var(--primary-color);
+}
+.highlight{
+	background-color: var(--secondary-color);
+}
+.white{
+	background-color: #fff;
+}
+.btn-secondary,
+.bg-secondary{
+	background: var(--secondary-color) !important;
+}
+.bg-tertiary{
+	background: var(--tertiary-color) !important;
+}
+.btn.active,
+.btn-outline-dark:hover{
+	background-color: var(--secondary-color);
+	border-color: var(--secondary-color);
+}
+
+/*Give colors for other regions such as sidebar, classes such as jumbo,sidebar links, block title, highlight text,..*/
+
+
+/*Text Color*/
+body,
+.shrink #block-base-languageswitcher ul.links li a{
+	color: var(--darker-color);
+}
+a{
+	color: var(--primary-color);
+}
+.shrink #block-base-mainnavigation-5 > ul.menu > li > span.nolink{
+/*	color: var(--primary-color);*/
+	color: var(--darker-color);
+}
+/*Animating Link
+.shrink #block-base-mainnavigation-5 > ul.menu > li > span.nolink{
+	background-image: linear-gradient(to right,var(--secondary-color),var(--secondary-color) 50%,#000 50%);
+}
+#block-base-mainnavigation-5 > ul.sf-menu > li > span.nolink{  
+  background-size: 200% 100%;
+  background-position: 100%;
+  display: inline-block;
+  position: relative;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;	
+}
+#block-base-mainnavigation-5 > ul.sf-menu > li > span.nolink:hover{
+	background-position: 0;
+}
+*/
+
+.header-top-region ul.menu li,
+.header-top-region a,
+#block-base-languageswitcher ul.links li a,
+#block-base-mainnavigation-5 > ul.menu > li > span.nolink,
+.footer-region,
+.footer-region a,
+.purple a{
+	color: #fff;
+}
+a:hover,
+.header-top-region a:hover,
+ul.sf-menu > li > span.nolink:hover,
+ul.sf-menu > li.active-trail > span.nolink,
+.shrink #block-base-languageswitcher ul.links li a:hover,
+.footer-region ul.menu li.active a.is-active{
+	color: var(--secondary-color);
+}
+h1,h2,h3,h4,h5,h6{
+	color: var(--heading-color);
+}
+.footer-region h2{
+	color: var(--tertiary-color);
+}
+
+@media(min-width: 769px){
+/*	.header-top-region{
+		background: none;
+	}
+	.header-top-region.shrink{
+		background-color: var(--primary-color);
+	}*/
+}

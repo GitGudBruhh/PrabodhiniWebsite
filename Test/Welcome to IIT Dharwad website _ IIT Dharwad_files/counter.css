@@ -1,0 +1,49 @@
+/* Counter */
+
+#block-base-counter{
+/*	background: linear-gradient(45deg, #faa519 0%,#e15a17 25%,#dc2767 50%,#bc2393 75%,#89288f 100%);
+	background: linear-gradient(45deg,#89288f 45%,#bf2393 100%);*/
+	background: var(--primary-color);
+}
+#counter-box-container {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+	grid-gap: 1em;
+	padding-block: 1em;
+}
+#counter-box {
+	padding-inline: 0.75em;
+	text-align: center;
+	color: #fff;
+}
+#counter-box span {
+	font-size: 3em;
+	font-weight: 900;
+	font-family: var(--secondary-font);
+}
+#counter-box span.plus{
+	font-size: 2em;
+	padding-left: 5px;
+}
+#counter-box p{
+	margin: 0;
+}
+
+@media(min-width: 640px){
+	#counter-box-container {
+		grid-template-columns: repeat(auto-fit, minmax(240px,1fr));
+	}
+}
+@media(min-width: 769px){
+	#counter-section-container{
+		padding: 2em 0;
+		max-width: 80em;
+		margin: 0 auto;
+	}
+}
+@media(min-width: 992px){
+	#counter-box-container {
+		grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+	}
+}
+

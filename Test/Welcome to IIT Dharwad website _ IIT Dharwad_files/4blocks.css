@@ -1,0 +1,465 @@
+/*4 blocks Menu*/
+#block-base-homepagemainnavigation ul.menu li,
+#block-base-topmostmenu-2 ul.menu li,
+#block-base-mainnavigation-3 ul.menu li,
+#block-base-homepagemainnavigation-2 ul.menu li{
+	text-align: center;
+	padding: 3rem 0.5rem 1rem;
+	list-style: none;
+	box-shadow: 5px 5px 5px -5px var(--lighter-color);
+	margin-bottom: 0.1em;
+}
+#block-base-homepagemainnavigation ul.menu li:nth-child(odd),
+#block-base-topmostmenu-2 ul.menu li:nth-child(odd),
+#block-base-mainnavigation-3 ul.menu li:nth-child(odd),
+#block-base-homepagemainnavigation-2 ul.menu li:nth-child(odd){
+	background-color: var(--primary-color);
+}
+#block-base-homepagemainnavigation ul.menu li:nth-child(even),
+#block-base-topmostmenu-2 ul.menu li:nth-child(even),
+#block-base-mainnavigation-3 ul.menu li:nth-child(even),
+#block-base-homepagemainnavigation-2 ul.menu li:nth-child(even){
+	background-color: #fff;
+}
+#block-base-homepagemainnavigation ul.menu li a,
+#block-base-topmostmenu-2 ul.menu li a,
+#block-base-mainnavigation-3 ul.menu li a,
+#block-base-homepagemainnavigation-2 ul.menu li a{
+	text-transform: uppercase;
+	color: var(--primary-color);
+	position: relative;
+	font-weight: var(--fw-xb);
+}
+#block-base-homepagemainnavigation ul.menu li:nth-child(odd) a,
+#block-base-topmostmenu-2 ul.menu li:nth-child(odd) a,
+#block-base-mainnavigation-3 ul.menu li:nth-child(odd) a,
+#block-base-homepagemainnavigation-2 ul.menu li:nth-child(odd) a{
+	color: #fff;
+}
+#block-base-homepagemainnavigation ul.menu li.active a,
+#block-base-topmostmenu-2 ul.menu li.active a,
+#block-base-mainnavigation-3 ul.menu li.active a,
+#block-base-homepagemainnavigation-2 ul.menu li.active a{
+/*	border-bottom: solid 2px var(--secondary-color);*/
+}
+
+/*4blocks Icons*/
+#block-base-homepagemainnavigation ul.menu li,
+#block-base-topmostmenu-2 ul.menu li,
+#block-base-mainnavigation-3 ul.menu li,
+#block-base-homepagemainnavigation-2 ul.menu li{
+	position: relative;
+	overflow: hidden;
+	z-index: 1;
+	padding: 0;
+}
+#block-base-homepagemainnavigation ul.menu li a,
+#block-base-topmostmenu-2 ul.menu li a,
+#block-base-mainnavigation-3 ul.menu li a,
+#block-base-homepagemainnavigation-2 ul.menu li a{
+	padding: 1rem 0.5rem;
+	display: block;	
+}
+#block-base-homepagemainnavigation ul.menu li:after,
+#block-base-topmostmenu-2 ul.menu li:after,
+#block-base-mainnavigation-3 ul.menu li:after,
+#block-base-homepagemainnavigation-2 ul.menu li:after{
+    content: "";
+    position: absolute;
+    left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 0;
+	z-index: -1;
+	transition-duration: .2s;
+}
+#block-base-homepagemainnavigation ul.menu li:hover:after,
+#block-base-topmostmenu-2 ul.menu li:hover:after,
+#block-base-mainnavigation-3 ul.menu li:hover:after,
+#block-base-homepagemainnavigation-2 ul.menu li:hover:after{
+	height: 100%;
+}
+#block-base-homepagemainnavigation ul.menu li:nth-child(odd):after,
+#block-base-topmostmenu-2 ul.menu li:nth-child(odd):after,
+#block-base-mainnavigation-3 ul.menu li:nth-child(odd):after,
+#block-base-homepagemainnavigation-2 ul.menu li:nth-child(odd):after{
+	background: #6c1072;
+}
+#block-base-homepagemainnavigation ul.menu li:nth-child(even):after,
+#block-base-topmostmenu-2 ul.menu li:nth-child(even):after,
+#block-base-mainnavigation-3 ul.menu li:nth-child(even):after,
+#block-base-homepagemainnavigation-2 ul.menu li:nth-child(even):after{
+	background: #f5f5f5;
+}
+#block-base-homepagemainnavigation ul.menu li:hover a,
+#block-base-topmostmenu-2 ul.menu li:hover a,
+#block-base-mainnavigation-3 ul.menu li:hover a,
+#block-base-homepagemainnavigation-2 ul.menu li:hover a{
+	letter-spacing: 1px;
+/*	padding-bottom: 0.75rem;*/
+}
+
+
+
+
+
+
+#block-base-homepagemainnavigation ul.menu li a::before,
+#block-base-homepagemainnavigation-2 ul.menu li a::before,
+#block-base-topmostmenu-2 ul.menu li a::before,
+#block-base-mainnavigation-3 ul.menu li a::before{
+	content: '';
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 100%;
+	width: calc(5vw);
+	height: calc(5vw);	
+	min-width: 32px;
+	min-height: 32px;
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 10px;
+}
+/*Homepage*/
+li.Facilities a::before{
+	background-image: url('/sites/default/files/2023-10/icon-facilities-lg.png');
+}
+/*About page*/
+li.IIT a::before{
+	background-image: url('/sites/default/files/2023-10/icon-iit-lg.png');
+}
+body.path-frontpage li.Departments a::before,
+li.Campus a::before{	
+	background-image: url('/sites/default/files/2023-10/icon-campus-lg.png');
+}
+li.Donation a::before{
+	background-image: url('/sites/default/files/2023-10/icon-donation-lg.png');
+}
+li.Reports a::before{
+	background-image: url('/sites/default/files/2023-10/icon-gst-lg.png');
+}
+li.Ranking a::before{
+	background-image: url('/sites/default/files/2023-10/icon-ranking-lg.png');
+}
+
+/*Leadership Page*/
+li.Board a::before{
+	background-image: url('/sites/default/files/2023-09/icon-governing-lg.png');
+}
+li.Senate a::before{
+	background-image: url('/sites/default/files/2023-09/icon-senate-lg_0.png');
+/*	width: 80px !important;*/
+}
+li.Committee a::before{
+	background-image: url('/sites/default/files/2023-09/icon-committee-lg_0.png');
+/*	width: 90px !important;*/
+}
+li.Administration a::before{
+	background-image: url('/sites/default/files/2023-09/icon-administration-lg.png');
+}
+
+/*Recruitment*/
+li.People a::before,
+li.Faculty a::before{
+	background-image: url('/sites/default/files/2023-10/icon-recruitment-faculty-lg.png');
+/*	width: 100px !important;*/
+}
+li.Staff a::before{
+	background-image: url('/sites/default/files/2023-10/icon-recruitment-staff-lg.png');
+/*	width: 100px !important;*/
+}
+li.Others a::before{
+	background-image: url('/sites/default/files/2023-10/icon-recruitment-others-lg.png');
+}
+body.page-node-2314 li.Announcements a::before,
+body.path-staff-recruitments li.Announcements a::before,
+body.path-other-recruitments li.Announcements a::before,
+body.path-announcement li.Announcements a::before{
+	background-image: url('/sites/default/files/2023-10/icon-announcements-purple-lg.png');
+}
+
+/*Notification*/
+li.News a::before{
+	background-image: url('/sites/default/files/2023-10/icon-news-lg.png');
+}
+li.Outreach a::before{
+	background-image: url('/sites/default/files/2023-10/icon-outreach-lg.png');
+}
+li.Tenders a::before{
+	background-image: url('/sites/default/files/2023-10/icon-tender-lg.png');
+/*	width: 92px !important;*/
+}
+
+/*Alumni*/
+li.Details a::before{
+	background-image: url('/sites/default/files/2023-10/icon-alumni-about-lg.png');
+/*	width: 85px !important;*/
+}
+li.Corner a::before{
+	background-image: url('/sites/default/files/2023-09/icon-alumni-corner-lg.png');
+/*	width: 100px !important;*/
+}
+li.Events a::before{
+	background-image: url('/sites/default/files/2023-09/icon-alumni-event-lg.png');
+}
+li.Donate a::before{
+	background-image: url('/sites/default/files/2023-09/icon-donate-lg.png');
+}
+
+/*Academics*/
+li.Departments a::before{
+	background-image: url('/sites/default/files/2023-10/icon-departments-white-lg.png');
+}
+li.Programs a::before{
+	background-image: url('/sites/default/files/2023-10/icon-programs-lg.png');
+}
+li.Announcements a::before{
+	background-image: url('/sites/default/files/2023-10/icon-announcements-lg.png');
+}
+li.Faculty.Advisors a::before{
+	background-image: url('/sites/default/files/2023-10/icon-faculty-advisors-purple-lg.png');
+/*	width: 60px !important;*/
+}
+li.Library{
+	display: none;
+}
+
+/*Admissions*/
+#block-base-mainnavigation-3 li.UG a::before{
+	background-image: url('/sites/default/files/2023-10/icon-alumni-about-lg.png');
+}
+body.page-node-138 #block-base-mainnavigation-3 li:nth-child(2) a::before,
+body.page-node-139 #block-base-mainnavigation-3 li:nth-child(2) a::before,
+body.page-node-140 #block-base-mainnavigation-3 li:nth-child(2) a::before,
+body.page-node-282 #block-base-mainnavigation-3 li:nth-child(2) a::before,
+body.page-node-284 #block-base-mainnavigation-3 li:nth-child(2) a::before,
+body.page-node-288 #block-base-mainnavigation-3 li:nth-child(2) a::before,
+body.page-node-2343 #block-base-mainnavigation-3 li:nth-child(2) a::before{
+	background-image: url('/sites/default/files/2023-10/icon-mtech-lg_0.png');
+/*	width: 64px !important;*/
+}
+body.page-node-138 #block-base-mainnavigation-3 li:nth-child(3) a::before,
+body.page-node-139 #block-base-mainnavigation-3 li:nth-child(3) a::before,
+body.page-node-140 #block-base-mainnavigation-3 li:nth-child(3) a::before,
+body.page-node-282 #block-base-mainnavigation-3 li:nth-child(3) a::before,
+body.page-node-284 #block-base-mainnavigation-3 li:nth-child(3) a::before,
+body.page-node-288 #block-base-mainnavigation-3 li:nth-child(3) a::before,
+body.page-node-2343 #block-base-mainnavigation-3 li:nth-child(3) a::before{
+	background-image: url('/sites/default/files/2023-10/icon-phd-lg.png');
+}
+
+/*Campus Life*/
+li.Student a::before{
+	background-image: url('/sites/default/files/2023-10/icon-studentlife-lg.png');
+/*	width: 160px !important;*/
+}
+li.Gallery a::before{
+	background-image: url('/sites/default/files/2023-10/icon-gallery-white-lg.png');
+/*	width: 90px !important;*/
+}
+li.Career a::before{
+	background-image: url('/sites/default/files/2023-10/icon-cdc-purple-lg.png');
+}
+li.Sports a::before{
+	background-image: url('/sites/default/files/2023-10/icon-sports-white-lg.png');
+}
+
+/*Research*/
+li.Research.Facilities a::before{
+	background-image: url('/sites/default/files/2023-10/icon-facilities-purple-lg.png');
+}
+body.path-research-areas li:nth-child(3) a::before,
+body.path-facilities li:nth-child(3) a::before,
+body.path-consultancy-projects li:nth-child(3) a::before,
+body.path-sponsored-projects li:nth-child(3) a::before,
+body.path-csr-projects li:nth-child(3) a::before,
+body.path-publications li:nth-child(3) a::before,
+body.page-node-2466 li:nth-child(3) a::before{
+	background-image: url('/sites/default/files/2023-10/icon-grants-lg_0.png');
+}
+li.Outcomes a::before{
+	background-image: url('/sites/default/files/2023-10/icon-outcomes-lg.png');
+}
+
+/*People*/
+li.Area a::before{
+	background-image: url('/sites/default/files/2023-10/icon-researcharea-white-lg.png');
+}
+li.Advisors a::before,
+li.Advisor a::before,
+li.Advisers a::before{
+	background-image: url('/sites/default/files/2023-10/icon-advisor-lg.png');
+}
+li.Former a::before{
+	background-image: url('/sites/default/files/2023-10/icon-former-associates-lg_0.png');
+/*	width: 80px !important;*/
+}
+
+
+#block-base-homepagemainnavigation ul.menu,
+#block-base-topmostmenu-2 ul.menu,
+#block-base-mainnavigation-3 ul.menu,
+#block-base-homepagemainnavigation-2 ul.menu{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(150px,1fr));
+}
+@media(max-width: 450px){	/*Reordering 3rd child position in mobile view*/
+	#block-base-homepagemainnavigation ul.menu li:nth-child(3),
+	#block-base-topmostmenu-2 ul.menu li:nth-child(3),
+	#block-base-mainnavigation-3 ul.menu li:nth-child(3),
+	#block-base-homepagemainnavigation-2 ul.menu li:nth-child(3){
+		order: 1;
+	}
+}
+#block-base-homepagemainnavigation,
+#block-base-topmostmenu-2,
+#block-base-mainnavigation-3,
+#block-base-homepagemainnavigation-2{
+	padding-bottom: 20px;
+	background: var(--tertiary-color);
+}
+
+/*
+@media(min-width: 480px){
+	#block-base-homepagemainnavigation ul.menu,
+	#block-base-topmostmenu-2 ul.menu,
+	#block-base-mainnavigation-3 ul.menu,
+	#block-base-homepagemainnavigation-2 ul.menu{
+		grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
+	}
+}
+@media(min-width: 700px){
+	#block-base-homepagemainnavigation ul.menu,
+	#block-base-topmostmenu-2 ul.menu,
+	#block-base-mainnavigation-3 ul.menu,
+	#block-base-homepagemainnavigation-2 ul.menu{
+		grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
+	}
+}
+*/
+@media(min-width: 769px){
+	/*4blocks reduced to 3blocks*/
+/*	body.path-recruitments #block-base-topmostmenu-2 ul.menu,
+	body.page-node-2314 #block-base-topmostmenu-2 ul.menu,
+	body.page-node-2341 #block-base-topmostmenu-2 ul.menu,
+	body.path-faculty-recruitments #block-base-topmostmenu-2 ul.menu,
+	body.path-staff-recruitments #block-base-topmostmenu-2 ul.menu,
+	body.path-other-recruitments #block-base-topmostmenu-2 ul.menu{
+		grid-template-columns: repeat(3, 1fr);
+		padding: 0 10%;
+	}*/
+	#block-base-mainnavigation-3 ul.menu,
+	#block-base-homepagemainnavigation-2 ul.menu{
+		position: relative;
+	}
+	#block-base-homepagemainnavigation ul.menu li a,
+	#block-base-topmostmenu-2 ul.menu li a,
+	#block-base-mainnavigation-3 ul.menu li a,
+	#block-base-homepagemainnavigation-2 ul.menu li a{
+		padding: 2rem 1rem 1rem;	
+		line-height: 1.1;
+		height: 10rem;
+	}
+	#block-base-homepagemainnavigation-2 ul.menu li.Former a,
+	#block-base-mainnavigation-3 ul.menu li.Research a{
+		padding-inline: 2em;
+	}
+}
+@media(min-width: 800px){
+	#block-base-homepagemainnavigation ul.menu,
+	#block-base-topmostmenu-2 ul.menu,
+	#block-base-mainnavigation-3 ul.menu,
+	#block-base-homepagemainnavigation-2 ul.menu{
+		grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+	}
+}
+@media(min-width: 992px){
+	#block-base-homepagemainnavigation ul.menu,
+	#block-base-topmostmenu-2 ul.menu,
+	#block-base-mainnavigation-3 ul.menu,
+	#block-base-homepagemainnavigation-2 ul.menu{
+		position: absolute;
+		top: -70px;
+		padding-inline: 5%;	
+		z-index: 10;
+		width: 100%;
+		max-width: var(--max-width-md);
+		left: 50%;
+		transform: translateX(-50%);
+	}
+	#block-base-mainnavigation-3 ul.menu:has(li:nth-child(3):last-child){
+		padding-inline: 13%;
+	}
+	#block-base-homepagemainnavigation ul.menu{
+/*		top: -60px;*/
+	}
+	body.no-inner-banner #block-base-mainnavigation-3,
+	body.no-inner-banner #block-base-topmostmenu-2{
+		margin-top: 100px;
+	}
+	/*4 blocks Menu*/
+	#block-base-homepagemainnavigation,
+	#block-base-topmostmenu-2,
+	#block-base-mainnavigation-3,
+	#block-base-homepagemainnavigation-2{
+		padding-bottom: 8rem;
+	}
+/*	#block-base-homepagemainnavigation{
+		padding-bottom: 10rem;
+	}*/
+}
+
+@media(min-width: 1024px){
+/*	#block-base-homepagemainnavigation,
+	#block-base-topmostmenu-2,
+	#block-base-mainnavigation-3,
+	#block-base-homepagemainnavigation-2{
+		padding-bottom: 9rem;
+	}
+	*/
+	#block-base-homepagemainnavigation ul.menu,
+	#block-base-topmostmenu-2 ul.menu,
+	#block-base-mainnavigation-3 ul.menu,
+	#block-base-homepagemainnavigation-2 ul.menu{
+	/*	padding-inline: 15%;	
+		left: 15%;
+		right: 15%;*/
+	}
+/*	body.page-node-2314 #block-base-topmostmenu-2 ul.menu,
+	body.page-node-2341 #block-base-topmostmenu-2 ul.menu,
+	body.page-node-138 #block-base-mainnavigation-3 ul.menu,
+	body.page-node-139 #block-base-mainnavigation-3 ul.menu,
+	body.page-node-140 #block-base-mainnavigation-3 ul.menu{
+		max-width: 80em;
+	}*/
+}
+
+/*Animating link underline on hover*/
+#block-base-homepagemainnavigation ul.menu li a::after,
+#block-base-homepagemainnavigation-2 ul.menu li a::after,
+#block-base-topmostmenu-2 ul.menu li a::after,
+#block-base-mainnavigation-3 ul.menu li a::after{
+	position: relative;
+	width: 25%;
+	margin: 0 auto;
+	left: unset;
+	bottom: -3px;
+}
+#block-base-homepagemainnavigation ul.menu li.active a::after,
+#block-base-topmostmenu-2 ul.menu li.active a::after,
+#block-base-mainnavigation-3 ul.menu li.active a::after,
+#block-base-homepagemainnavigation-2 ul.menu li.active a::after{
+	width: 33%;
+	height: 3px;
+	transform: scaleX(1);
+}
+body.path-frontpage #block-base-homepagemainnavigation ul.menu li.active a::after,
+body.page-node-35 #block-base-topmostmenu-2 ul.menu li.active a::after{
+	transform: scaleX(0);
+}
+body.path-frontpage #block-base-homepagemainnavigation ul.menu li.active:hover a::after,
+body.page-node-35 #block-base-topmostmenu-2 ul.menu li.active:hover a::after,
+body.page-node-35 #block-base-topmostmenu-2 ul.menu li.IIT.active a::after,
+#block-base-mainnavigation-5 ul.sf-menu > li.active-trail > span.nolink::after{
+	transform: scaleX(1);
+}
