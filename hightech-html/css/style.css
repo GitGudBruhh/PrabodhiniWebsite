@@ -22,6 +22,7 @@ basic
 ---------------------------------------------------------------------*/
 
 body {
+/*      background-color: black; */
      color: #666666;
      font-size: 14px;
      font-family: 'Poppins', sans-serif;
@@ -255,8 +256,11 @@ button {
 
 .d_flex {
      display: flex;
+/*      position: absolute; */
+/*      top: 0px; */
      align-items: center;
      flex-wrap: wrap;
+/*      margin-top : 0px; */
 }
 
 .container {
@@ -298,9 +302,11 @@ header
 
 .header {
      width: 100%;
-     background: rgba(39, 43, 44, 0.87);
-     height: 106px;
-     padding: 37px 30px;
+/*      background: rgba(39, 43, 44, 0.87); */
+     background: rgba(50, 50, 50, 0.87);
+
+/*      height: 106px; */
+     padding: 1vh;
      position: absolute;
      z-index: 999;
      box-shadow: 3px 0 13px rgba(30, 30, 30, 0.90);
@@ -445,7 +451,7 @@ ul.email li i {
 /** we_do **/
 
 .we_do {
-     background: #fff;
+     background: rgb(230,230,230);
      padding: 90px 0 190px 0;
 }
 
@@ -738,8 +744,8 @@ ul.email li i {
 /** contact section **/
 
 .contact {
-     background: #fefeff;
-     padding: 90px 0;
+     background: rgb(230,230,230);
+     padding: 120px 0;
 }
 
 .contact .titlepage::before {
@@ -814,6 +820,7 @@ ul.email li i {
      box-shadow: 0px 0 11px rgba(30, 30, 30, 0.07);
      padding: 40px;
      margin-bottom: 26px;
+     background: white;
 }
 
 .clientsl_text i img {
@@ -883,7 +890,7 @@ ul.email li i {
 
 .footer {
      background: #222222;
-     padding-top: 90px
+     padding-top: 30px
 }
 
 .newslatter_form {
@@ -1020,3 +1027,78 @@ ul.social_icon li a:hover {
 .inner_page .about {
      margin: 90px 0;
 }
+
+
+/* CARD */
+/* ===================================== */
+       .card{
+
+        width: 380px;
+        border: none;
+        border-radius: 15px;
+        padding: 10px;
+        background-color: #fff;
+        position: relative;
+        height: 390px;
+       }
+
+       .upper{
+
+        height: 120px;
+        margin: 0px 0px 10px 0px;
+
+       }
+
+       .upper img{
+
+        height: 180px;
+        width: 100%;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+
+       }
+
+       .user{
+        position: relative;
+       }
+
+       .profile img{
+
+
+        height: 80px;
+        width: 80px;
+        margin-top:2px;
+
+
+       }
+
+       .profile{
+
+        position: absolute;
+        top:-10px;
+        left: 38%;
+        height: 90px;
+        width: 90px;
+        border:3px solid #fff;
+
+        border-radius: 50%;
+
+       }
+
+       .follow{
+
+        border-radius: 15px;
+        padding-left: 20px;
+        padding-right: 20px;
+        height: 35px;
+       }
+
+       .stats span{
+
+        font-size: 29px;
+       }
+
+       .header-logo{
+            height: 70px;
+            width: auto;
+     }
