@@ -11,6 +11,8 @@ import Fonts
 @import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
 @import url('https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,600i,700,700i,800,800i&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Merienda:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+@import url('https://fonts.googleapis.com/css?family=Pangolin');
 
 /*--------------------------------------------------------------------- import Files ---------------------------------------------------------------------*/
 
@@ -20,14 +22,18 @@ import Fonts
 /*--------------------------------------------------------------------- 
 basic 
 ---------------------------------------------------------------------*/
+html {
+  scroll-behavior: smooth;
+}
 
 body {
 /*      background-color: black; */
      color: #666666;
      font-size: 14px;
-     font-family: 'Poppins', sans-serif;
+/*      font-family: 'Poppins', sans-serif; */
+     font-family: 'Pangolin';
      line-height: 1.80857;
-     font-weight: normal;
+     font-weight: bold;
 }
 
 a {
@@ -376,7 +382,7 @@ ul.email li i {
 /** banner_main **/
 
 #top_section {
-     background-image: url('../images/banner.jpg');
+     background-image: url('../images/banner6.jpg');
      background-size: cover;
      background-repeat: no-repeat;
      padding-top: 120px;
@@ -416,8 +422,15 @@ ul.email li i {
 
 .bluid {
      margin-top: 10px;
-     font-family: 'Open Sans', sans-serif;
+     font-family: 'Merienda';
      text-align: left;
+}
+
+.font-two {
+/*      margin-top: 10px; */
+     font-family: 'Pangolin';
+/*      text-align: left; */
+     font-weight: bold;
 }
 
 .banner_main .bluid h1 {
@@ -452,7 +465,7 @@ ul.email li i {
 
 .we_do {
      background: rgb(230,230,230);
-     padding: 90px 0 190px 0;
+     padding: 40px 0 190px 0;
 }
 
 .we_do .titlepage::before {
@@ -580,7 +593,7 @@ ul.email li i {
 /** portfolio **/
 
 .portfolio {
-     padding-top: 90px;
+     padding-top: 40px;
      padding-bottom: 90px;
      background: #fff;
 }
@@ -608,9 +621,9 @@ ul.email li i {
 }
 
 #ho_nf:hover .portfolio_text {
-     height: 240px;
+     height: 120px;
      transition: ease-in all 0.5s;
-     padding: 40px 40px;
+     padding: 25px 40px;
 }
 
 #ho_nf:hover .li_icon {
@@ -745,7 +758,7 @@ ul.email li i {
 
 .contact {
      background: rgb(230,230,230);
-     padding: 120px 0;
+     padding: 40px 0;
 }
 
 .contact .titlepage::before {
@@ -1099,6 +1112,11 @@ ul.social_icon li a:hover {
        }
 
        .header-logo{
-            height: 70px;
+            height: 7vh;
+            width: auto;
+     }
+
+       .logo-footer img{
+            height: 7vh;
             width: auto;
      }
