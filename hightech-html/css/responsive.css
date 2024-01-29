@@ -184,6 +184,10 @@ File Name: responsive.css
         height: 100px;
         padding: 20px 14px;
     }
+    #ho_nf:hover .portfolio_text-gallery {
+        height: 50px;
+        padding: 20px 14px;
+    }
     .portfolio_text p {
         font-size: 12px;
         line-height: 18px;

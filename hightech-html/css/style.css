@@ -465,7 +465,7 @@ ul.email li i {
 
 .we_do {
      background: rgb(230,230,230);
-     padding: 40px 0 190px 0;
+     padding: 40px 0 0px 0;
 }
 
 .we_do .titlepage::before {
@@ -618,6 +618,12 @@ ul.email li i {
 #ho_nf:hover {
      box-shadow: 3px 0 20px rgba(30, 30, 30, 0.31);
      transition: ease-in all 0.5s;
+}
+
+#ho_nf:hover .portfolio_text {
+     height: 120px;
+     transition: ease-in all 0.5s;
+     padding: 25px 40px;
 }
 
 #ho_nf:hover .portfolio_text {
