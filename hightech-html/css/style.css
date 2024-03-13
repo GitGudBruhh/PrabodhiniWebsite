@@ -826,6 +826,19 @@ ul.email li i {
 
 /** end contact section **/
 
+/** Recent and upcoming **/
+.recent-and-upcoming {
+     background: rgb(270,270,270);
+     padding: 40px 0;
+}
+
+.recent-and-upcoming .titlepage::before {
+     right: inherit;
+     border: #2e2f34 solid 5px;
+     left: 15px;
+}
+/** End recent **/
+
 
 /** testimonial **/
 
